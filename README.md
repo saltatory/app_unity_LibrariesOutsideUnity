@@ -49,6 +49,10 @@ You don't write `MonoBehaviours` in libraries!
 	* Set the target for .NET 4.5
 * Use the included MW Unity .gitignore file
 
+## Post build event
+
+This step requires modifying the `.csproj` file for the library in a text editor. This change will cause the binary outputs of the build, including the `.dll` and the `.pdb` in debug mode to be copied into `<Unity Root>/Assets/Binaries`. When Unity "sees" the `.pdb`, it will automatically create a matching `.mdb` for Mono debugging purposes.
+
 ```xml
   <PropertyGroup>
     <PostBuildEvent Condition=" '$(OS)' == 'Unix' ">cp -R "$(TargetDir)/*" "$(SolutionDir)/Assets/Libraries"</PostBuildEvent>
