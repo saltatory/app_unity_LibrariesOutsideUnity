@@ -55,7 +55,7 @@ This step requires modifying the `.csproj` file for the library in a text editor
 
 ```xml
   <PropertyGroup>
-    <PostBuildEvent Condition=" '$(OS)' == 'Unix' ">cp -R "$(TargetDir)/*" "$(SolutionDir)/Assets/Libraries"</PostBuildEvent>
-    <PostBuildEvent Condition=" '$(OS)' != 'Unix' ">xcopy "$(TargetDir)*" "$(SolutionDir)Assets\Libraries" /Y /E /I</PostBuildEvent>
+    <PostBuildEvent Condition=" '$(OS)' == 'Unix' ">cp -R "$(TargetDir)/*" "$(SolutionDir)/Assets/Binaries"</PostBuildEvent>
+    <PostBuildEvent Condition=" '$(OS)' != 'Unix' ">xcopy "$(TargetDir)*" "$(SolutionDir)Assets\Binaries" /Y /E /I</PostBuildEvent>
   </PropertyGroup>
 ```
