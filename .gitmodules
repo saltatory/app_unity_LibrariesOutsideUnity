@@ -1,3 +1,6 @@
 [submodule "Libraries/lib_unity_JSON"]
 	path = Libraries/lib_unity_JSON
 	url = git@github.com:saltatory/lib_unity_JSON.git
+[submodule "Libraries/lib_unity_TestLibrary"]
+	path = Libraries/lib_unity_TestLibrary
+	url = git@github.com:saltatory/lib_unity_TestLibrary.git
