@@ -60,6 +60,12 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="JSON">
+      <HintPath>Assets\Binaries\JSON.dll</HintPath>
+    </Reference>
+    <Reference Include="Log">
+      <HintPath>Assets\Binaries\Log.dll</HintPath>
+    </Reference>
     <Reference Include="TestLibrary">
       <HintPath>Assets\Binaries\TestLibrary.dll</HintPath>
     </Reference>

@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app_unity_LibrariesOutsideUnity.CSharp", "app_unity_LibrariesOutsideUnity.CSharp.csproj", "{DBD8042C-77F9-B476-6B33-80F1F0D65934}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLibrary", "Libraries\lib_unity_TestLibrary\TestLibrary\TestLibrary.csproj", "{183D07F6-6281-49A8-91EA-903BA604D810}"
