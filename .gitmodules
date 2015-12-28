@@ -4,3 +4,6 @@
 [submodule "Libraries/lib_unity_TestLibrary"]
 	path = Libraries/lib_unity_TestLibrary
 	url = git@github.com:saltatory/lib_unity_TestLibrary.git
+[submodule "Libraries/lib_unity_Log"]
+	path = Libraries/lib_unity_Log
+	url = git@github.com:saltatory/lib_unity_log.git
