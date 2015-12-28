@@ -54,8 +54,10 @@ You don't write `MonoBehaviours` in libraries!
 This step requires modifying the `.csproj` file for the library in a text editor. This change will cause the binary outputs of the build, including the `.dll` and the `.pdb` in debug mode to be copied into `<Unity Root>/Assets/Binaries`. When Unity "sees" the `.pdb`, it will automatically create a matching `.mdb` for Mono debugging purposes.
 
 ```xml
-  <PropertyGroup>
-    <PostBuildEvent Condition=" '$(OS)' == 'Unix' ">cp -R "$(TargetDir)/*" "$(SolutionDir)/Assets/Binaries"</PostBuildEvent>
-    <PostBuildEvent Condition=" '$(OS)' != 'Unix' ">xcopy "$(TargetDir)*" "$(SolutionDir)Assets\Binaries" /Y /E /I</PostBuildEvent>
-  </PropertyGroup>
+<PropertyGroup>
+	<PostBuildEvent Condition=" '$(OS)' == 'Unix' ">cp -R "$(TargetDir)/*" "$(SolutionDir)/Assets/Binaries"</PostBuildEvent>
+	<PostBuildEvent Condition=" '$(OS)' != 'Unix' ">xcopy "$(TargetDir)*" "$(SolutionDir)Assets\Binaries" /Y /E /I</PostBuildEvent>
+	<PostBuildEvent Condition=" '$(OS)' == 'Unix' ">rm "$(SolutionDir)/Assets/Binaries/Unity*"</PostBuildEvent>
+	<PostBuildEvent Condition=" '$(OS)' != 'Unix' ">IF EXIST "$(SolutionDir)Assets\Binaries\Unity*.*" del "$(SolutionDir)Assets\Binaries\Unity*.*" /Y /E /I</PostBuildEvent>
+</PropertyGroup>
 ```
