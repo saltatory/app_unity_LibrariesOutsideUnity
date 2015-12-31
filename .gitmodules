@@ -1,9 +1,9 @@
 [submodule "Libraries/lib_unity_JSON"]
 	path = Libraries/lib_unity_JSON
-	url = git@github.com:saltatory/lib_unity_JSON.git
+	url = git@bitbucket.org:saltatory/lib_unity_json.git
 [submodule "Libraries/lib_unity_TestLibrary"]
 	path = Libraries/lib_unity_TestLibrary
-	url = git@github.com:saltatory/lib_unity_TestLibrary.git
+	url = git@bitbucket.org:saltatory/lib_unity_examplelibrary.git
 [submodule "Libraries/lib_unity_Log"]
 	path = Libraries/lib_unity_Log
-	url = git@github.com:saltatory/lib_unity_log.git
+	url = git@bitbucket.org:saltatory/lib_unity_log.git
